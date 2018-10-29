@@ -134,5 +134,9 @@ LOGOUT_REDIRECT_URL = 'home'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'cpanel3.proisp.no'
+EMAIL_HOST_USER = 'test@ericeikrem.com'
+EMAIL_HOST_PASSWORD = 'j)y1ICnN92&_'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
