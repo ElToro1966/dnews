@@ -13,10 +13,10 @@
         {{ news.body }}
       </div>
       <div class="card-footer text-center text-muted">
-        <a href="#">Edit</a> | <a href="#">Delete</a>
+	<a href="{% url 'news_edit' news.pk %}">Edit</a> | 
+	<a href="{% url 'news_delete' news.pk %}">Delete</a>
       </div>
     </div>
     <br />
   {% endfor %}
 {% endblock content %}
-
